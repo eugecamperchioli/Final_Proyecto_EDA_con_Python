@@ -9,7 +9,7 @@ Este proyecto realiza un analisis exploratorio de datos (EDA) sobre una base de 
 - Filas: 43.000 registros
 - Variable: 21 columnas incluyendo características del cliente, del contexto económico y del historial de contacto.
 
-### 📌 Variables claves
+### 📌 Variables claves (dataset)
 
  1. age: La edad del cliente.
  2. job: La ocupación o profesión del cliente.
@@ -34,7 +34,16 @@ Este proyecto realiza un analisis exploratorio de datos (EDA) sobre una base de 
  21. latitude: aparentemente un error en el archivo, no corresponde.
  22. longitude: aparentemente un error en el archivo, no corresponde.
  23. id_: Un identificador único para cada registro en el dataset.
- 
+
+ ### 📌 Variables claves (generadas)
+ 1. education_grouped: agrupacion de la columna 'education' para mantener distinciones relevantes entre niveles bajos, medios y altos de educación.
+ 2. campaign_capped: limpieza y agrupacion de la columna campaign, eliminacion de ouliers y limitacion a 10 (maximo razonable)
+ 3. emp_var_context: transformacion de la columna 'emp.var.rate' a una columna categorica y agrupacion de valores para un contexto econmico.
+ 4. conf_idx_cat: transformacion a categorica de la columna 'cons.conf.idx' y agrupacion en niveles para analizar mejor el indice de confianza del consumidor. 
+ 5. euribor_cat: transformacion a categorica de la columna 'cons.conf.idx' y agrupacion en niveles para analizar mejor el impacto de la tasa de interes en el consumidor. 
+ 6. year: segmentacion de la variable año, proveida de la columna date.
+ 7. y_bin: versión binarizada de la variable objetivo 'y', que originalmente muestra valores de texto (yes & no)
+
 ## 📈 Analisis Realizado
 - Analisis preliminar
 - Limpieza de datos: tratamiento de valores nulos, outliers y codificacion. 
