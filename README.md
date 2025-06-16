@@ -52,20 +52,20 @@ Este proyecto realiza un analisis exploratorio de datos (EDA) sobre una base de 
 - Jypter Notebook
 
 ## 📂 Estructura del Proyecto
-
+│
 ├── DATA/
-    └── RAW
-          └── bank-additional.csv
-          └── customer-details.xlsx
-    └── OUTPUT
-          └── bank-additional_limpio.csv
+│    └── RAW
+│          └── bank-additional.csv
+│          └── customer-details.xlsx
+│    └── OUTPUT
+│          └── bank-additional_limpio.csv
 ├── NOTEBOOK/
-    └── 01-analisis_preliminar.ipynb
-    └── 02-limpieza.ipynb
-    └── 03-EDA.ipynb
+│    └── 01-analisis_preliminar.ipynb
+│    └── 02-limpieza.ipynb
+│    └── 03-EDA.ipynb
 ├── README.md   
 ├── SRC/
-  └── soporte.py
+│  └── soporte.py
 
 ## ✅ Principales Hallazgos
 Los clientes que adquirieron el servicio en su mayoria son de 30 a 38 años, de ocupacion admin y technician, casados y con una educacion superior/tecnica, con una leve recesion en la tasa de variacion de empleo.
